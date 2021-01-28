@@ -5,7 +5,8 @@ int main ()
 {
   int moneyEarned = 6000;
   double precent1 = 0.05;
-  double precent2 = 0.07;double precent3 = 0.1;
+  double precent2 = 0.07;
+  double precent3 = 0.1;
 
   double intoSaving1;
   double intoSaving2;

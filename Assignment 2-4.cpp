@@ -10,4 +10,5 @@ int main ()
   cout << "Regular price: $" << regular_price << endl;
   cout << "Discount amount: $" << discount_amount << endl;
   cout << "Sale price: $" << sales_price << endl; 
+  
   }
