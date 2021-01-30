@@ -16,14 +16,14 @@ int main()
   int var1 = 28;
   int var2 = 32;
   int var3 = 37;
-  int ver4 = 24;
-  int ver5 = 33;
+  int var4 = 24;
+  int var5 = 33;
 
   // set precision to 3 digits after decimal point
   cout << setprecision(3);
   cout << fixed << showpoint;
 
-  double sum = var1 + var2 + var3 + ver4 + ver5; //sum of 5 variabls
+  double sum = var1 + var2 + var3 + var4 + var5; //sum of 5 variabls
   double average = sum / 5;
 
   cout << "Sum: " << sum << endl;
