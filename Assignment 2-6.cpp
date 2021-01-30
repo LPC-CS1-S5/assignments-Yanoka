@@ -26,6 +26,6 @@ int main()
   double sum = var1 + var2 + var3 + var4 + var5; //sum of 5 variabls
   double average = sum / 5;
 
-  cout << "Sum: " << sum << endl;
-  cout << "Average: " << average << endl;
+  cout << setw(9) << "Sum: " << sum << endl;
+  cout << setw(9) << "Average: " << setw(7) << average << endl;
 }
