@@ -24,3 +24,4 @@ int main()
   cout << "meal total: $" << meal_total << endl;
  
 }
+
