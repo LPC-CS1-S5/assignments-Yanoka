@@ -1,18 +1,26 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
 int main() {
 
-  int males,famales,total;
+  double males,females,total,total_males;
 
-  cout << "How many males and females in a class?";
+
+  cout << "How many males in a class? ";
   cin >> males;
-  cout << "How many males and males in a class?";
-  cin >> females
+  cout << "How many females in a class? ";
+  cin >> females;
 
-  cout << male + fimale
 
-  
+  total = males + females;
+  total_males = males / total;
+
+  cout << "Males in the class:  " << setprecision(2) << fixed << showpoint<< total_males << " or "; 
+  cout << setprecision(0) << noshowpoint << total_males*100 << "% " << endl;
+ 
+  cout << "Females in the class:  " << setprecision(2) << fixed << showpoint<< 1-total_males << " or "; 
+  cout << setprecision(0) << noshowpoint << (1-total_males)*100 << "% " << endl;
 
 }

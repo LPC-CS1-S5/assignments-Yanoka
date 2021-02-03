@@ -25,6 +25,6 @@ cout << setprecision(2);
 cout << fixed << showpoint;
 
 total = seats_a*seats_a_price + seats_b*seats_b_price + seats_c*seats_c_price;
-cout << total << endl;
+cout << "Total: $" << total << endl;
 
 }
