@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cstdlib>
 #include <ctime>
 using namespace std;
@@ -16,8 +17,8 @@ int num1, num2, num3;
 	cout << "The random number: " <<  num1 << endl;
 	cout << "The random number: " <<  num2 << endl;
 	cout << "The random number: " <<  num3 << endl;
-  cout << "Sum of numbers: " << num1 + num2 + num3 << endl;
-  cout <<"Average of number: " << (num1 + num2 + num3)/3.0 << endl;
+  cout << "Sum of numbers: " << setw(6) << num1 + num2 + num3 << endl;
+  cout << "Average of number: " << setprecision(2)<< fixed << showpoint << (num1 + num2 + num3)/3.0 << endl;
 
 }
 
