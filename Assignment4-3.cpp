@@ -14,13 +14,13 @@ int main()
   switch(selection)
   {
     case 1 : cout << "Pi times radiuse squared\n";
-              break;
+            break;
     case 2 : cout << "Lenght times width\n";
-              break;
+            break;
     case 3 : cout << "Pi times radius squared times height\n";
-              break;
+            break;
     case 4 : cout << "Well okay than, good bye!\n";
-              break;
+            break;
     default: cout << "Not good with numbers,ea?\n";
   }
   
