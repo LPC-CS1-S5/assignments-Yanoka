@@ -17,9 +17,8 @@ int main()
     exit(-1);
   }
 
-  while (ifs)
+  while (ifs >> num)
     {
-      ifs >> num;
       sum+=num;
       numItems++;
       cout << num <<endl;
