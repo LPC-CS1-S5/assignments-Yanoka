@@ -8,6 +8,7 @@ int main()
   int id,number;
   string employeeName, depName;
   double salary;
+  double sumsalary=0;
 
   ifs.open("employee.txt");
   if (ifs.fail()){
@@ -21,9 +22,10 @@ int main()
   for (int i=0; i<number; i++) {
     ifs >> id >> employeeName >> depName >> salary;
     cout << id << " " << employeeName << " " << depName << " " << salary << endl;
-
+    sumsalary +=salary; 
+  
   }
-
+  cout << "Sum salary: " << sumsalary << endl;
   ifs.close();
 
 }
