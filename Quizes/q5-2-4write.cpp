@@ -19,7 +19,7 @@ int main()
     cin >> number;
     ofs << number << endl;
   }
-  while(number >= 0); 
+  while(number <= 0); 
 
 
   for (int i=0; i<number; i++) {
