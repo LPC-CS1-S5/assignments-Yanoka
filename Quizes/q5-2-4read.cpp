@@ -17,11 +17,7 @@ int main()
 
   ifs >> number;
   cout << number << endl;
-  // while (ifs >> id) {}
   
-
-
-
   for (int i=0; i<number; i++) {
     ifs >> id >> employeeName >> depName >> salary;
     cout << id << " " << employeeName << " " << depName << " " << salary << endl;
