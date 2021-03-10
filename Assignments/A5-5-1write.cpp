@@ -13,21 +13,20 @@ int main()
 
   ofs.open("studentName.txt");
   if (ofs.fail()){
-    cer << "File open error "<<endl;
+    cerr << "File open error "<<endl;
     exit(-1);
   }
   
   for (int i=0;i < num;i++)
   {
-      cout << "Please,enter the name?: "<<endl;
+      cout << "Please,enter the name: "<<endl;
       cin >> stname;
-      ofs << stname << endl;
+      ofs << stname << " ";
 
-      cout << "Please,enter the score?: "<<endl;
+      cout << "Please,enter two scores: "<<endl;
       cin >> score1 >> score2;
-      ofs << score1 << " ";
-      ofs << score2 << endl;
+      ofs << score1 << " " << score2 << endl;
 
   }
-  ofs.close("studentName.txt");
+  ofs.close();
 }
