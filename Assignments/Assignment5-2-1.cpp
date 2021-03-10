@@ -3,7 +3,8 @@ using namespace std;
 
 int main()
 {
-  int begin,end,i,j,sum;
+  int begin,end,i,j;
+  
   do{
     cout << "Please,enter two integers from 1 to 100 " << endl;
     cin >> begin >> end; 
@@ -12,11 +13,11 @@ int main()
 
   for (i=begin; i<end; i++){
     for(j=2; j<i;j++){
-      if(i%j)
+      if(i%j == 0)
         break;
     
     }
-    if (j>(i/2))
+    if (i==j)
      cout << i << " is prime number" <<endl;
   }
 }
