@@ -13,7 +13,7 @@ int main()
 
   for (i=begin; i<end; i++){
     for(j=2; j<i;j++){
-      if(i%j)
+      if(i%j==0)
         break;
     
     }
