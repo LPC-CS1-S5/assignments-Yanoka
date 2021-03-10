@@ -20,7 +20,4 @@ int main()
     nthPower *= N;
     cout << "power of " << i << ": " << nthPower << endl;
   }
-  
-  //if (i == 0) 
-  //  cout << "Not found" << endl;
 }
