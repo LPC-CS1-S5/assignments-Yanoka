@@ -12,7 +12,9 @@ int main()
   while(begin > end);
 
   for (i=begin; i<end; i++){
-    for(j=2; j<i;j++){
+    // for(j=2; j<i;j++){
+    // for(j=2; j< i/2 ;j++){
+    for(j=2; j< i/j ;j++){
       if(i%j==0)
         break;
     

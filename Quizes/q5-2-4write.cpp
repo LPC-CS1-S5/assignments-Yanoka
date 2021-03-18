@@ -25,8 +25,7 @@ int main()
   for (int i=0; i<number; i++) {
     cout << "Please, enter the id: ";
     cin >> id;
-    ofs << id;
-    ofs << " ";
+    ofs << id << " ";
 
     cout << "Please, enter the name: ";
     cin >> employeeName;
