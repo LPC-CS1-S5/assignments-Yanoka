@@ -1,8 +1,11 @@
 #include <iostream>
+
 using namespace std;
 // Funtion Prototype
-bool	 inputvalidate(int, int);
-void 	getlistprime(int, int);
+bool inputValidate(int, int);
+void getlistPrime(int, int);
+
+
 int main()
 {
 	int num1, num2;
@@ -10,8 +13,7 @@ int main()
 	do {
 		cout << "Enter two numbers : ";
 		cin >> num1 >> num2;
-	} while( !
-	inputvalidate(num1,num2) ); 
+	} while(!inputValidate(num1,num2)); 
 
-	getlistprime(num1, num2);
+	getlistPrime(num1, num2);
 } 
