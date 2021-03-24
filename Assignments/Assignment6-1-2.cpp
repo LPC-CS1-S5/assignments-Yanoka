@@ -18,5 +18,6 @@ int main()
      result = nthpowern(n);
   else 
      result = 1;
+
   printout(result);
 }
