@@ -14,7 +14,7 @@ int main() {
     {
         sum = grade1 + grade2;
         avg = sum / 2.0;
-        cout << student << " - Sum: " << sum << " Avg: " << avg << endl;
+        cout << student << " " << grade1 << " " << grade2 << " - Sum: " << sum << " Avg: " << avg << endl;
 
         if (avg > 80) more80num++;
 
