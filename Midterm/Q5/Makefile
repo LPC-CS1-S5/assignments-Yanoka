@@ -6,7 +6,7 @@ CFLAGS=-I.
 %.o: %.c 
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-buildall: main.o evensumGet.o oddsumGet.o  
-	$(CC) -o Q5 main.o evensumGet.o oddsumGet.o
+buildall: main.o division.o getInput.o isSame.o  write.o
+	$(CC) -o Q5 main.o division.o getInput.o isSame.o  write.o
 clean: 
 	rm -f *.o Q5
