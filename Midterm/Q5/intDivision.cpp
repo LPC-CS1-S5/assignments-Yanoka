@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int division(n1,n2)
+int intDivision(n1,n2)
 {
 	int result;
 

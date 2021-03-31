@@ -4,7 +4,7 @@ using namespace std;
 
 void getInput(int &, int &);
 int isSame(int, int);
-int division(int, int);
+int intDivision(int, int);
 void writefile(ofstream &, int);
 
 int main()
@@ -24,8 +24,8 @@ int main()
 		getInput(num1,num2);
 		if (isSame(num1,num2))
 			break;
-		division = division(num1,num2);	
-
+		division = intDivision(num1, num2);	
+    writefile(ofs, division);
 	}
 
 	ofs.close();
