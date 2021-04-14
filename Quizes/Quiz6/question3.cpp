@@ -9,13 +9,13 @@ void printResult(int n1, int n2, int n3, int min);
 
 int main()
 {
-int min, n1, n2, n3;
+	int min, n1, n2, n3;
 
-srand(time(0));
+	srand(time(0));
 
-getRandnum(n1, n2, n3);
-min = findMin(n1, n2, n3);
-printResult(n1, n2, n3, min);
+	getRandnum(n1, n2, n3);
+	min = findMin(n1, n2, n3);
+	printResult(n1, n2, n3, min);
 
 }
 
