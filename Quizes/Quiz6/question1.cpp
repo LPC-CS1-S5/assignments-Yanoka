@@ -34,7 +34,7 @@ void swapTwoValues(int &n1, int &n2)
 void swapTwoValues(float &f1, float &f2)
 {
 	float temp;
-	temp  = n1;
-	n1 = n2;
-	n2 = temp;
+	temp  = f1;
+	f1 = f2;
+	f2 = temp;
 }
