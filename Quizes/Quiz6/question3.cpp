@@ -13,6 +13,10 @@ int min, n1, n2, n3;
 
 srand(time(0));
 
+getRandnum(n1, n2, n3);
+min = findMin(n1, n2, n3);
+printResult(n1, n2, n3, min);
+
 }
 
 void getRandnum(int &n1, int &n2, int &n3)
@@ -31,10 +35,10 @@ int  findMin(int n1, int n2, int n3)
 	if ( min > n3)
 		min = n3;
 
-return min;
+	return min;
 }
 
 void printResult(int n1, int n2, int n3, int min)
 {
-
+	cout << n1 << " " << n2 << " " << n3 << " min: " << min << endl;
 }
