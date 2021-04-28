@@ -28,7 +28,9 @@ int			main()
 	int		sum1,sum2;
 
 	sum1 = getdiagonalsum1(number);
+	cout << "Sum1 :  " << sum1 << endl;
 	sum2 = getdiagonalsum2(number);
+	cout << "Sum2 : " << sum2 << endl;
 	cout << "Difference is : " << setw(5) << abs(sum1-sum2) << endl;
 }
 int			getdiagonalsum1(int number[][SIZE])

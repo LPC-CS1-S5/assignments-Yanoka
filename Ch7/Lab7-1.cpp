@@ -25,7 +25,7 @@ int			main()
 
 int	 	makearray(int	number[])
 {	
-	srand(time(NULL));
+	srand(time(0));
 	//or do-while: 
 	//do {
 	//	last = rand() % 20 ;
@@ -41,9 +41,10 @@ void	bubble(int number[], int last)
 	for(int i=0; i<last-1; i++){
 		int temp;
 		if (number[i] > number[i+1]) {
-			temp = number[i];
-			number[i] = number[i+1];
-			number[i+1] = temp;
+			swap(number[i],number[i+1])
+			// temp = number[i];
+			// number[i] = number[i+1];
+			// number[i+1] = temp;
 		}
 	}
 }

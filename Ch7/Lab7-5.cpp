@@ -34,11 +34,10 @@ void	shiftleft(int	number[], int SIZE, int count)
 void	shiftleftone(int	number[], int SIZE)
 {
 	int temp = number[0];
-
-	for (int i = 0; i < SIZE - 1; i++) {
+	for (int i = 0; i < SIZE - 1; i++) 
+	{
 		number[i] = number[i + 1];
 	}
-
 	number[SIZE - 1] = temp;
 }
 void	printout(int	number[], int SIZE)

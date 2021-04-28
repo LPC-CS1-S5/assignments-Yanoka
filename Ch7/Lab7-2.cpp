@@ -29,7 +29,7 @@ int		main()
 int	 	makearray(int	number[])
 {
 	int		last;
-	srand(time(NULL));
+	srand(time(0));
 	do {
 		last = rand() % 20 ;
 	} while (last < 10 );

@@ -39,7 +39,7 @@ int		main()
 	
 	cout << endl << "EQUAL FOLD" << endl;
 	equalfold(number, equal, last);
-	printout(equal, ceil(last/2.0));
+	printout(equal, ceil(last/2.0)); // ceil->2.6=3 
 }
 
 void	swapfold(int number[], int last) 
@@ -75,7 +75,7 @@ void	equalfold(int number[], int equal[], int last)
 int	 	makearray(int	number[])
 {
 	int		last;
-	srand(time(NULL));
+	srand(time(0));
 	do {
 		last = rand() % 20 ;
 	} while (last < 10);

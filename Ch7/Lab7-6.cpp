@@ -36,7 +36,7 @@ void	insertone(int number[], int &length, int usernum)
 	for (i=length-1; i>= position; i--) 
 		number[i+1] = number[i];
 
-	number[i+1] = usernum;
+	number[i+1] = usernum; //or [position]
 	length += 1;
 }
 void	deleteone(int number[], int &length, int usernum)
