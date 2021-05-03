@@ -49,7 +49,7 @@ void findMaxSum(int result[], int num[][5], int rows, int cols)
 			rowSum += num[i][j];
 		}
 
-		if (maxRowSum < rowSum) {
+		if (maxRowSum < rowSum || i==0) {
 			maxRowSum = rowSum;
 			for (int j = 0; j < cols; j++) {
 				result[j] = num[i][j];
@@ -58,7 +58,7 @@ void findMaxSum(int result[], int num[][5], int rows, int cols)
 	}
 }
 
-void findMaxElm(int result[], int num[][5], int rows, int cols)
+void findMaxElm(int *result, int *num[5], int rows, int cols)
 {
 	for (int i = 0; i < rows; i++) {
 		int maxElm = -1;
