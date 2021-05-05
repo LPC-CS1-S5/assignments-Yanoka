@@ -3,7 +3,26 @@
 #include	<cmath>
 using 	namespace	std;
 
+bool lessThan10(int[],int);
+
 int 	main()
 {
 	int number[10] = {10,15,11,1,20,8,4,9,13,12}
+	for (int i=0, i<10 , i++)
+	{
+		lessThan10(number,i)
+	}
+
+	
+
+
+}
+
+bool lessThan10(int number[],i)
+{
+	if (abs(n[i] - n[i + 1]) < 10)
+    cout << “ less than 10\n”
+		return 
+	
+	if 
 }
