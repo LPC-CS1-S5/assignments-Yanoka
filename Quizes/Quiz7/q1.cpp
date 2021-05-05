@@ -3,7 +3,7 @@
 #include	<cmath>
 using 	namespace	std;
 
-bool lessThan10(int[],int);
+void lessThan10(int[],int);
 
 int 	main()
 {
@@ -15,7 +15,7 @@ int 	main()
 	}
 }
 
-bool lessThan10(int n[], int i)
+void lessThan10(int n[], int i)
 {
 	if (i==0 && abs(n[i]-n[i+1] < 10) )
     cout << i+1 << " less than 10\n";
