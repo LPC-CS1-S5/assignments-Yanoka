@@ -12,17 +12,17 @@ int 	main()
 	{
 		lessThan10(number,i)
 	}
-
-	
-
-
 }
 
-bool lessThan10(int number[],i)
+bool lessThan10(int n[],i)
 {
-	if (abs(n[i] - n[i + 1]) < 10)
-    cout << “ less than 10\n”
-		return 
-	
-	if 
+	if (i==0 && abs(n[i]-n[i+1] < 10) )
+    cout << i+1 << “ less than 10\n”;
+
+	if (abs(n[i] - n[i + 1]) < 10 && abs(n[i] - n[i - 1]) < 10)
+    cout << i+1 << “ less than 10\n”;
+
+	if (i==9 && abs(n[i]-n[i-1] < 10) )
+    cout << i+1 << “ less than 10\n”;
+
 }
