@@ -1,4 +1,6 @@
-#include    <iostream>
+#include  <iostream>
+#include	<iomanip>
+
 using namespace std;
 
 void printtriangle(int numbers[][3], int);
@@ -15,10 +17,11 @@ int main()
 }
 void printtriangle(int num[][3], int size)
 {
-   for(i=0 ; i<size; i++)
+   for(int i=0 ; i<size; i++)
 	 {
-		 	for(j=0; j<i; j++)
-			 cout << 
+		 cout << endl;
+		 	for(int j=0; j< i+1; j++)
+			 cout << setw(3) << num[i][j] ;
 	 }
 
 }
