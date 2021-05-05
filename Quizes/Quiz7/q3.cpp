@@ -10,11 +10,16 @@ int main()
 		int from = 0;
 		int to = 5;
 
-    findMax( num, from, to );
-		findMax( num, from+5, to+5 );
+    findMax( numbers, from, to );
+		findMax( numbers, from+5, to+5 );
 }
 void findMax(int num[], int from, int to)
 {
+	int max = -30;
 	for (int i=from; i < to; i++)
-		if (max < ) 
+	{
+		if (max < num[i]) 
+			max = num[i];
+	}
+	cout << "Max: " << max << endl;
 }
