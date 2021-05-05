@@ -3,11 +3,11 @@
 // 3. Insert the user number into the vector 
 // 4. Delete the item from the vector by searching the user value.
 // 
-#include    <iostream>
-#include    <iomanip>
-#include    <cstdlib>
-#include    <ctime>
-#include    <vector>
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <ctime>
+#include <vector>
 #include <algorithm>
 using namespace std;
  
