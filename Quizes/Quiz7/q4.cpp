@@ -43,11 +43,10 @@ void deleteone(vector<int> &vec)
 	{
 		if ( usernum == *iter){
 			vec.erase(iter);
-			//break;
+			iter--; 
 		}
 	} 
-
-  //cout << usernum << "is deleted " << deletecnt << " times \n";
+	
   printvector(vec);
  
 }
