@@ -23,5 +23,6 @@ int main() {
 			}
 		}
 		cout << occurrences << endl; 
+		ifso.close();
 	}
 }
