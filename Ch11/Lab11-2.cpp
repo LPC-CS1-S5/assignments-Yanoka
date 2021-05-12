@@ -12,15 +12,13 @@ using namespace std;
     int avg;
   };
 
-int		makingstructarray(student []); // return value : the number of struct array
-void	printout(const student );
-void	findusername(student [],int, string);
+//int		makingstructarray(student []); // return value : the number of struct array
+//void	printout(const student );
+//void	findusername(student [],int, string);
 
 int main()
 {
   ifstream ifs;
-
-
   student s[10];
   int i = 0;
 
@@ -54,14 +52,14 @@ int main()
   
 
 	string username;
-	cout << Please,enter your name << endl;
+	cout << "Please, enter your name: " << endl;
 	cin >> username;
 
   // Make a code for finding some record that has "given name"
 
 	for (int i=0; i<10; i++) 
 	{
-		if (s[i].name.find(username) > 0) {
+		if (s[i].name.find(username) != string::npos) {
 			cout << "ID: " << s[i].id << endl;
 			cout << "name: " << s[i].name << endl;
 			cout << "scores: " << endl;
@@ -75,8 +73,5 @@ int main()
 			cout << " Avg :" << s[i].avg << endl;
 		}
 	}
-  //while/ for 
-  //if ( s[i].name == userinput)
-  
 }
 
