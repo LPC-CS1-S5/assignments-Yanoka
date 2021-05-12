@@ -8,15 +8,16 @@ using namespace std;
 int main() {
 	ifstream ifso;
 	ifso.open("python.txt");
+	string readline;
 
-	if(isfo){
+	if(ifso){
 		int occurrences = 0;
 
-		while(ifso>>readline){
+		while(ifso >> readline){
 			string::size_type pos = 0;
 			string target = "th";
 
-			while ((pos = s.find(target, pos )) != string::npos) {
+			while ((pos = readline.find(target, pos )) != string::npos) {
 				pos += target.length();
 				occurrences++;
 			}
