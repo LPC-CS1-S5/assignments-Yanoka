@@ -102,4 +102,5 @@ void	printout(Employee s[], int i)
 	cout << " month: " << s[i].month << endl;
 	cout << " day: " << s[i].day << endl;
 	cout << " year: " << s[i].year << endl;
+	cout << endl;
 }
