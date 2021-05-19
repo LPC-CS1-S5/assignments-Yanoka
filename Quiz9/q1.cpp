@@ -4,12 +4,13 @@
 
 using namespace std;
 
-const	int 	NUMCOURSE=2;
+const	int 	NUM_OF_LINES=5;
 
 struct Employee
 {	
 	int		id;	
-	string	name;
+	string	firstName;
+	string	lastName;
 	int 	salary;	
 	string departmentName;
 	string month;
@@ -18,9 +19,9 @@ struct Employee
 
 };
 
-int		makingstructarray(Employee []); 
-void	printout(const Employee );
-void	findusername(Employee [],int, string);
+int		makestructarray(Employee []); 
+void	printout(const Employee , int );
+void	findusers(Employee [],int, string);
 
 int 	main()
 {
@@ -43,63 +44,64 @@ int		makestructarray(Employee s[])
 {
 	ifstream ifs;
 	
-  student s[10];
+  employee s[NUM_OF_LINES];
   int i = 0;
 
   ifs.open("employee.txt");
 
 
-  while(i < 10)
+  while(i < NUM_OF_LINES)
   {
-    s[i].sum = 0;
-
     ifs >> s[i].id;
 		cout << " ID: " << s[i].id << endl;
 
-    ifs >> s[i].name;
-		cout << " name: " << s[i].name << endl;
+    ifs >> s[i].firstName;
+		cout << " First name: " << s[i].firstName << endl;
 
-    for(int j = 0; j < NUMCOURSE; j++)
-    {
-      ifs >> s[i].score[j];
-			cout << " score: " << s[i].score[j] << endl;
-      s[i].sum += s[i].score[j];
-    }
+		ifs >> s[i].lastName;
+		cout << " Last name: " << s[i].lastName << endl;
 
-		cout << " Sum: " << s[i].sum << endl;
-    s[i].avg = s[i].sum / 2;
-		cout << " Avg: " << s[i].avg << endl;
+		ifs >> s[i].salary;
+		cout << " Salary: " << s[i].salary << endl;
+
+		ifs >> s[i].departmentName;
+		cout << " Department name: " << s[i].departmentName << endl;
+
+		ifs >> s[i].month;
+		cout << " month: " << s[i].month << endl;
+
+		ifs >> s[i].day;
+		cout << " day: " << s[i].day << endl;
+
+		ifs >> s[i].year;
+		cout << " year: " << s[i].year << endl;
     i++;
   } 
 
   ifs.close();
 }
 
-void	findusername(Employee s[], int numofRecords, string username)
+void	findusers(Employee s[], int salary, string department)
 {
-		for (int i=0; i<10; i++) 
+		for (int i=0; i<NUM_OF_LINES; i++) 
 	{
-		if (s[i].name.find(username) != string::npos) {
-			cout << "ID: " << s[i].id << endl;
-			cout << "name: " << s[i].name << endl;
-			cout << "scores: " << endl;
+		if (s[i].name.find(department) != string::npos) {
+			printout(s[],i);
+		
 
-			for(int j = 0; j < NUMCOURSE; j++) 
-			{
-				cout << s[i].score[j] << endl;
-    	}
-
-			cout << " Sum: " << s[i].sum << endl;
-			cout << " Avg :" << s[i].avg << endl;
 		}
 	}
 
 }
 
-void	printout(const Employee s)
+void	printout(const Employee s, int i)
 {
-	cout << s. id << "\t" << s.name << "\t"
-		<< s.score[0] << "\t" << s.score[1] << 
-		"\tsum:" << s.sum << "\taverage: "<< s.avg << endl;
-
+	cout << " ID: " << s[i].id << endl;
+	cout << " First name: " << s[i].firstName << endl;
+	cout << " Last name: " << s[i].lastName << endl;
+	cout << " Salary: " << s[i].salary << endl;
+	cout << " Department name: " << s[i].departmentName << endl;
+	cout << " month: " << s[i].month << endl;
+	cout << " day: " << s[i].day << endl;
+	cout << " year: " << s[i].year << endl;
 }
