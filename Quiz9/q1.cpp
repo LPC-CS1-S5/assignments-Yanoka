@@ -6,23 +6,26 @@ using namespace std;
 
 const	int 	NUMCOURSE=2;
 
-struct Student
-{
-	int		id;
+struct Employee
+{	
+	int		id;	
 	string	name;
-	int 	score[NUMCOURSE];	
-	int		sum;
-	int		avg;
+	int 	salary;	
+	string departmentName;
+	string month;
+	int day;
+	int year;
+
 };
 
-int		makingstructarray(Student []); // return value : the number of struct array
-void	printout(const Student );
-void	findusername(Student [],int, string);
+int		makingstructarray(Employee []); 
+void	printout(const Employee );
+void	findusername(Employee [],int, string);
 
 int 	main()
 {
 	int		numofRecords=0;
-	Student	s[50];
+	Employee	s[50];
 	string	username;
 
 	numofRecords = makingstructarray(s);
@@ -30,20 +33,20 @@ int 	main()
 	for(int	 i=0; i<numofRecords; i++)
 		printout(s[i]);
 
-	cout << "Enter user name to find in Student's records\n";
+	cout << "Enter user name to find in Employee's records\n";
 	cin	>> username;
 	findusername(s, numofRecords, username);
 
 }
 
-int		makingstructarray(Student s[])
+int		makestructarray(Employee s[])
 {
 	ifstream ifs;
 	
   student s[10];
   int i = 0;
 
-  ifs.open("students.txt");
+  ifs.open("employee.txt");
 
 
   while(i < 10)
@@ -72,7 +75,7 @@ int		makingstructarray(Student s[])
   ifs.close();
 }
 
-void	findusername(Student s[], int numofRecords, string username)
+void	findusername(Employee s[], int numofRecords, string username)
 {
 		for (int i=0; i<10; i++) 
 	{
@@ -93,7 +96,7 @@ void	findusername(Student s[], int numofRecords, string username)
 
 }
 
-void	printout(const Student s)
+void	printout(const Employee s)
 {
 	cout << s. id << "\t" << s.name << "\t"
 		<< s.score[0] << "\t" << s.score[1] << 
