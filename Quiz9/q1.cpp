@@ -19,9 +19,9 @@ struct Employee
 
 };
 
-int		makestructarray(Employee []); 
-void	printout(const Employee , int );
-void	findusers(Employee [],int, string);
+void		makestructarray(Employee []); 
+void	printout(Employee[] , int );
+void	findusers(Employee[],int, string);
 
 int 	main()
 {
@@ -29,22 +29,18 @@ int 	main()
 	Employee	s[50];
 	string	username;
 
-	numofRecords = makingstructarray(s);
-	cout << "Total number of stdents records is " << numofRecords << endl;
-	for(int	 i=0; i<numofRecords; i++)
-		printout(s[i]);
+	makestructarray(s);
 
-	cout << "Enter user name to find in Employee's records\n";
-	cin	>> username;
-	findusername(s, numofRecords, username);
+	int salary = 100000;
+	string department = "Computer";
 
+	findusers(s, salary, department);
 }
 
-int		makestructarray(Employee s[])
+void		makestructarray(Employee s[])
 {
 	ifstream ifs;
 	
-  employee s[NUM_OF_LINES];
   int i = 0;
 
   ifs.open("employee.txt");
@@ -85,16 +81,17 @@ void	findusers(Employee s[], int salary, string department)
 {
 		for (int i=0; i<NUM_OF_LINES; i++) 
 	{
-		if (s[i].name.find(department) != string::npos) {
-			printout(s[],i);
-		
-
+		if (s[i].departmentName.find(department) != string::npos) {
+			printout(s, i);
+		}
+		if (s[i].salary > salary) {
+			printout(s, i);
 		}
 	}
 
 }
 
-void	printout(const Employee s, int i)
+void	printout(Employee s[], int i)
 {
 	cout << " ID: " << s[i].id << endl;
 	cout << " First name: " << s[i].firstName << endl;
