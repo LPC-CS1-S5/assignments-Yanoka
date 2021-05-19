@@ -34,6 +34,7 @@ int 	main()
 	int salary = 100000;
 	string department = "Computer";
 
+	cout << endl << "Trying to find" << endl;
 	findusers(s, salary, department);
 }
 

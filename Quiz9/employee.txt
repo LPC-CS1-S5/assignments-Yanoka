@@ -1,5 +1,5 @@
-123456 John Doe 140000 Computer Jan 31 2020
+123456 John Doe 140000 Marketing Jan 31 2020
 223456 Mary Smith 50000 Office Feb 13 2020
 323456 Martin Kruz 160000 Computer Mar 31 2020
-423456 Yana Berezina 140000 Computer Jan 23 2020
+423456 Yana Berezina 140000 Security Jan 23 2020
 523456 Ted Doe 90000 Computer Jan 31 2020
