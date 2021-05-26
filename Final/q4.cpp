@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int splitwords(string txt, char delimiter, string userinput);
+void findwords(string txt, char delimiter, string userinput);
 
 int main() {	
 	string  userinput;
@@ -12,22 +12,18 @@ int main() {
   cout << "Enter user string "; 
   cin >> userinput;
 
-	splitwords(words, ' ', userinput);
+	findwords(words, ' ', userinput);
 }
 
-void splitwords(string txt, char delimiter, string userinput)
+void findwords(string txt, char delimiter, string userinput)
 {
 	int start=0;
-	int cnt=0;
 	size_t sub_string_found;
-	// string::iterator found;
 	size_t found;
 	string split;
 
 	while ((found = txt.find(delimiter, start)) != string::npos) {
 		split = txt.substr(start, found-start);
-		// cout << " Split word " << split << endl;
-
 		sub_string_found = split.find(userinput);
 
 		if (sub_string_found != string::npos) {
@@ -35,6 +31,5 @@ void splitwords(string txt, char delimiter, string userinput)
 		}
 
 		start = found + 1;
-		cnt += 1;
 	}
 }
