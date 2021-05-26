@@ -1,7 +1,9 @@
 #include    <iostream>
 #include    <fstream>
 #include    <iomanip>
-#include <cstdio>
+#include 		<cstdio>
+#include <sstream>
+#include <cstring>
 using namespace std;
 
 const unsigned short N=5;
@@ -29,6 +31,9 @@ int main()
 {
 	ifstream ifs;
 	ofstream 	ofs;
+	stringstream ss;
+	string buf;
+	string readline;
 
 	ifs.open("grades.txt");
 	ofs.open("grades.bin");	
