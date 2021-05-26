@@ -36,7 +36,7 @@ void deleteone(vector<int> &vec)
 	cout << "Please,enter the number: " << endl;
   cin >> usernum; 
 
-	// Your Code 
+	// *while
 	vector<int>::iterator iter;
 
  	for(iter=vec.begin(); iter != vec.end(); iter++)
@@ -50,3 +50,11 @@ void deleteone(vector<int> &vec)
   printvector(vec);
  
 }
+
+/*
+while ((it = find(vec.begin(), vec.end(), usernum)) != vec.end()) {
+    cout << *it << " is deleting\n";
+    vec.erase(it);
+    deletecnt += 1;
+  }
+*/
