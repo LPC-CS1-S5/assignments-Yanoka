@@ -1,8 +1,9 @@
-#include        <iostream>
+#include  <iostream>
+#include	<string>
 
 using namespace std;
 
-bool subset(int[], int[]);
+void subset(string[], string[]);
 
 const int SIZE1 = 5;
 const int SIZE2 = 10;
@@ -15,13 +16,13 @@ int main() {
   cout << "Enter user string "; 
   cin >> userinput;
 
-	if (subset(numbers1, numbers2))
+	if (subset(words, userinput))
 		cout << "Subset" << endl;
 	else
 		cout << "Not subset" << endl;
 }
 
-bool subset(int numbers1[], int numbers2[]){
+void subset(string words[], string userinput[]){
 	for (int i = 0; i < SIZE2; i++) {
 		for (int j = 0; j < SIZE1; j++) {
 			if (numbers1[j] != numbers2[i+j]) {
