@@ -8,14 +8,21 @@ int numbers1[SIZE1] = {2, 3, 5, 9, 10};
 int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17};
 
 int main() {
+	if (subset())
+		cout << "Subset";
+	else
+		cout << "Not subset";
+}
+
+bool subset(){
 	for (int i = 0; i < SIZE2; i++) {
 		for (int j = 0; j < SIZE1; j++) {
-			if (numbers1[i] != numbers2[j]) {
+			if (numbers1[j] != numbers2[i+j]) {
 				break;
 			}
 
-			if (j == SIZE1 - 1) 
-				cout << "Subset";
+			if (j == SIZE1 - 1)
+				return true;
 		}
 	}
 }
