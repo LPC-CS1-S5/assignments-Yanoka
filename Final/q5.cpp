@@ -22,7 +22,7 @@ struct Grade{
   Scores  score;
 };
 
-Grade g;
+Grade g[16];
 
 int main()
 {
@@ -32,4 +32,40 @@ int main()
 	ifs.open("grades.txt");
 	ofs.open("grades.bin");	
 
+  for ( int i = 0; i < 16; i++)
+  {
+		ifs >> readline; 
+		ss.clear();
+		ss << readline;
+
+		getline(ss, buf, ',');
+		strcpy(g[i].first, buf.c_str());
+
+		getline(ss, buf, ',');
+		strcpy(g[i].last, buf.c_str());
+		 
+		getline(ss, buf, ',');
+		strcpy(g[i].ssn, buf.c_str());
+
+		getline(ss, buf, ',');
+		g[i].score.sc[0] = stod(buf);
+
+		getline(ss, buf, ',');
+		g[i].score.sc[1] = stod(buf);
+
+		getline(ss, buf, ',');
+		g[i].score.sc[2] = stod(buf);
+
+		getline(ss, buf, ',');
+		g[i].score.sc[3] = stod(buf);
+
+		getline(ss, buf, ',');
+		g[i].score.sc[4] = stod(buf);
+
+		getline(ss, buf, ',');
+		strcpy(g[i].score.grade, buf.c_str());    
+		
+		ofs.write( (char *)&g[i], sizeof(Grade) );
+
+	}
 }
