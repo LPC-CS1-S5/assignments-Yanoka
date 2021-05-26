@@ -1,17 +1,17 @@
-#include    <iostream>
-#include    <fstream>
-#include    <iomanip>
-#include 		<cstdio>
-#include <sstream>
-#include <cstring>
+#include  <iostream>
+#include  <fstream>
+#include  <iomanip>
+#include 	<cstdio>
+#include 	<sstream>
+#include 	<cstring>
 using namespace std;
 
 const unsigned short N=5;
 
 struct  Scores{
-    double  sc[N];
-		char 		grade[3];
-    //string  grade;
+  double  sc[N];
+	char 		grade[3];
+  	//string  grade;
 };
 
 struct Grade{
