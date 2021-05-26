@@ -1,6 +1,7 @@
 #include    <iostream>
 #include    <fstream>
 #include    <iomanip>
+#include <cstdio>
 using namespace std;
 
 const unsigned short N=5;
