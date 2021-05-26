@@ -53,20 +53,10 @@ int main()
 		getline(ss, buf, ',');
 		strcpy(g[i].ssn, buf.c_str());
 
-		getline(ss, buf, ',');
-		g[i].score.sc[0] = stod(buf);
-
-		getline(ss, buf, ',');
-		g[i].score.sc[1] = stod(buf);
-
-		getline(ss, buf, ',');
-		g[i].score.sc[2] = stod(buf);
-
-		getline(ss, buf, ',');
-		g[i].score.sc[3] = stod(buf);
-
-		getline(ss, buf, ',');
-		g[i].score.sc[4] = stod(buf);
+		for (int j = 0; j < 5; j++) {
+			getline(ss, buf, ',');
+			g[i].score.sc[j] = stod(buf);
+		}		
 
 		getline(ss, buf, ',');
 		strcpy(g[i].score.grade, buf.c_str());    

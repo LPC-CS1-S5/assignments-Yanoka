@@ -4,16 +4,25 @@
 using namespace std;
 
 const unsigned short N=5;
+
 struct  Scores{
     double  sc[N];
-    string  grade;
+		char 		grade[3];
+    //string  grade;
 };
+
 struct Grade{
-    string  first;
-    string  last;
-    string  ssn;
-    Scores  score;
+	char first[20];
+	char last[50];
+	char ssn[20];
+
+    // string  first;
+    // string  last;
+    // string  ssn;
+  Scores  score;
 };
+
+
 Grade g;
 void printstruct(Grade);
 int main()
