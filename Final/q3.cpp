@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool subset(int[], int[]);
+//bool subset(int[], int[]);
 
 const int SIZE1 = 5;
 const int SIZE2 = 10;
